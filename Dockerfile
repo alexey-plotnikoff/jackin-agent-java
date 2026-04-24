@@ -5,7 +5,7 @@ FROM projectjackin/construct:trixie
 RUN tar --help
 
 WORKDIR /opt
-RUN curl -o graalvm-community.tar.gz -L https://github.com/graalvm/graalvm-ce-builds/releases/download/jdk-25.0.2/graalvm-community-jdk-25.0.2_linux-aarch64_bin.tar.gz \
+RUN curl -o graalvm-community.tar.gz -L https://github.com/graalvm/graalvm-ce-builds/releases/download/jdk-25.0.2/graalvm-community-jdk-25.0.2_linux-aarch64_bin.tar.gz
 RUN tar -xzf graalvm-community.tar.gz
 RUN rm -rf graalvm-community.tar.gz
 RUN mv graalvm-community* jdk
