@@ -1,0 +1,8 @@
+dockerfile = "Dockerfile"
+
+[identity]
+name = "Agent Java"
+
+[agents."alexey-plotnikoff/jackin-agent-java"]
+git = "https://github.com/alexey-plotnikoff/jackin-agent-java.git"
+trusted = true
