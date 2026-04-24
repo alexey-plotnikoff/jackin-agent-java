@@ -3,7 +3,6 @@ FROM projectjackin/construct:trixie
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 WORKDIR /opt
-RUN apt-get install -y libavformat-dev libavdevice-dev python3-av
 RUN if [ $TARGETARCH = "arm64" ]; then \
         curl -o graalvm-community.tar.gz -L https://github.com/graalvm/graalvm-ce-builds/releases/download/jdk-25.0.2/graalvm-community-jdk-25.0.2_linux-aarch64_bin.tar.gz \
     ; fi
