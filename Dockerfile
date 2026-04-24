@@ -1,6 +1,6 @@
 FROM projectjackin/construct:trixie
 
-SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+#SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 WORKDIR /opt
 RUN if [ $TARGETARCH = "arm64" ]; then \
